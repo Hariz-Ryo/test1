@@ -1,0 +1,60 @@
+week3 
+
+วิธี if else
+if (expression)
+    statement1
+else 
+      tatement2
+
+ วิธี if ,else if
+if (expression1)
+    statement1
+else if (expression2)
+    statement2
+else
+    statement5
+
+วิธี switch case
+switch (expression) 
+{
+    case const-expr: 
+        statements
+    case const-expr:
+        statements
+    default: 
+        statements
+}
+
+ลูป while
+while (expression) 
+      statement
+
+ลูป for
+for (expr1; expr2; expr3)
+       statement
+
+break ใช้หยุดลูป
+
+เช่น  
+if example
+if (money >= 0 && money <= 100000.00) {
+     float a = money *0.05 ;
+     printf("%.2f", a);
+else {
+     printf("Error: Salary must be greater or equal to 0");
+
+while example
+while (a >= 0) 
+    { 
+        printf( "%d\n", a);     
+  
+        a--; 
+    } 
+
+for example
+for (int i = 0; n > i; i--)
+{
+    printf( "%d\n", n);  
+}
+
+
