@@ -1,0 +1,35 @@
+week2 
+ตัวแปรต่างๆและการรับข้อมูลเข้า
+
+void ไม่คืนค่า
+#define 3.14 นิยามค่าคงที่
+
+ตัวแปรรับข้อมูล
+gets(name);
+fgets(name, 20, stdin);
+
+char a = 'a'; เข้ามาเป็นASCII
+ตัวแปร = atoi(number); แปลงเป็นint
+
+ใช้sizeof ตรวจขนาดข้อมูล
+
+double เป็น float
+long เป็น int
+
+puts(number); เว้นบรรทัดหลังprint
+printf("hello\n"); ไม่เว้นบรรทัด
+
+(Increment and Decrement Operators)
+int counter = 1;
+int a = 1 + count++; output 1
+int a = 1 + ++count; output 2
+int a = 1 - count--;
+int a = 1 - --count;
+
+(ใช้เงื่อนไข)
+expr1 ? expr2 : expr3
+
+เทียบค่าlogic
+&&  เช่น if(i > 0 && i < 40)
+||
+!
