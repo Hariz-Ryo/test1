@@ -1,0 +1,37 @@
+week4 
+
+การนิยามฟังก์ชัน
+ประเภทที่จะคืนค่า ชื่อ(int x)
+{
+    คำสั่ง
+}
+
+ ฟังก์ชัน prototype
+return-value-type function-name (parameter-list);
+เช่น int printf(const char *format, ...);
+
+printf, scanf in <stdio.h>
+sqrt, exp , log, pow, ceil, fmod in <math.h>
+
+Return Values
+ฟังก์ชันจะต้องส่งค่ากลับ 
+void ไม่มีการส่งค่ากลับ
+
+answer   = triple(square(cube(my_value))); สามารถใช้ซ้อนกันได้
+
+recursion เรียกตัวเองซ้ำ
+เช่น 
+long long int sb(int x)
+{
+    if (x == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return (x % 2 + 10 * sb(x / 2));
+    }
+}
+
+ตัวแปร local อยู่แค่ในฟังก์ชัน
+ตัวแปร global อยู่นอกฟังก์ชัน เข้าถึงได้จากทุกแหล่ง
