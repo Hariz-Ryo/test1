@@ -1,0 +1,37 @@
+week5 
+
+Local Variables ใช้งานได้แค่ในฟังก์ชันที่ถูกประกาศไว้
+Global Variables ประกาศไว้นอกฟังห์ชัน เพื่อเข้าถึง
+
+ีExample การเรียกฟังก์ชันโดยตัวแปรglobal(a20)และ local(a10)
+#include <stdio.h>
+#include <stdlib.h>
+int a = 100;
+int a10(int a)
+{
+    a = a + 10;
+    printf("a10 main = %d\n",a);
+    return a;
+}
+int a20();
+int main()
+{
+    int a = 30;
+    int b = a10(a);
+    printf("a10 main = %d\n",b);
+    int c = a20();
+    printf("a20 main = %d\n",c);
+}
+int a20()
+{
+    a += 20;
+    printf("a20 main = %d\n",a);
+    return a;
+}
+
+output
+a10 main = 40
+a10 main = 40
+a20 main = 120
+a20 main = 120
+
